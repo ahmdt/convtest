@@ -9,9 +9,18 @@ environment:
 
 dependencies:
   collection: ^1.15.0
-  convenient_test: ^1.0.0
-  convenient_test_common: ^1.0.0
-  convenient_test_common_dart: ^1.0.0
+  convenient_test:
+    git:
+      url: https://github.com/ahmdt/convtest.git
+      path: packages/convenient_test
+  convenient_test_common:
+    git:
+      url: https://github.com/ahmdt/convtest.git
+      path: packages/convenient_test_common
+  convenient_test_common_dart:
+    git:
+      url: https://github.com/ahmdt/convtest.git
+      path: packages/convenient_test_common_dart
   fixnum: ^1.0.0
   flutter:
     sdk: flutter
@@ -47,10 +56,10 @@ dev_dependencies:
 #   convenient_test_common_dart:
 #     path: ../convenient_test_common_dart
 
-dependency_overrides:
-  convenient_test:
-    path: ../convenient_test
-  convenient_test_common:
-    path: ../convenient_test_common
-  convenient_test_common_dart:
-    path: ../convenient_test_common_dart
+#dependency_overrides:
+#  convenient_test:
+#    path: ../convenient_test
+#  convenient_test_common:
+#    path: ../convenient_test_common
+#  convenient_test_common_dart:
+#    path: ../convenient_test_common_dart
